@@ -1,0 +1,183 @@
+/*CSS reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  /*div hátterek
+  
+  .profile-card {
+    background-color: hsla(60, 100%, 50%, .4);
+  }
+  .profile-image {
+    background-color: hsla(184, 44%, 6%, 0.29);
+  }
+  .name-headline {
+    background-color: hsla(28, 40%, 42%, 0.29);
+  }
+  .links {
+     background-color: hsla(91, 80%, 62%, 0.29);
+  }
+  .content {
+    background-color: hsla(91, 120%, 16%, 0.29);
+  }
+  */
+  
+  body {
+    display: flex; /*középre helyezés féexboxal*/
+    justify-content: center; /*az egyik tengely mentén rendezi középre*/
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+    background: url('https://i.imgur.com/ILpGeFr.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  
+  .name-font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    letter-spacing: 7px
+  }
+  
+  .profile-card {
+    width: 480px;
+    max-width: calc(100vw - 10px); /*100vw a böngészőablak teljes szélességének felel meg 5-5px tér maradjon mindkét oldalon*/
+    max-height: calc(100vh - 60px);
+    border-radius: 10% 10% 0% 10%;
+    border: 1px solid white;
+  }
+  
+  
+  
+  .profile-image {
+    float: right;
+    border-radius: 50%;
+    padding: 10px 10px;
+  }
+  
+  a:visited {
+    color: hsl(128, 91%, 89%);
+  }
+  
+  a {
+     color: hsl(128, 91%, 89%);
+     text-decoration: none;
+  }
+  
+  .name-headline {
+  
+  }
+  
+  section {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px 10px;
+    }
+  
+  .links {
+    float: right;
+  }
+  
+  .content {
+    width: 400px;
+    text-align: left;
+    /* border-top: 1px dashed white; */
+    color: hsl(161, 100%, 55%);
+    padding: 3px 30px 3px 40px;
+  }
+  
+  .about {
+    /* border-top: 1px dashed white; */
+    color: hsl(161, 100%, 55%);
+    padding: 3px 30px 3px 40px;
+    text-align: left;
+  }
+  
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      /*filter: grayscale(0%);*/
+      filter: grayscale(40%);
+      transition: all 0.5s ease-in-out;
+    }
+  
+    img:hover {
+    transform: scale(1.5);
+    filter: grayscale(0%);
+  }
+  
+  h1 {
+    padding: 10px 50px;
+    color: hsl(161, 100%, 55%);
+  }
+  
+  h2 {
+    padding: 0 90px;
+    color: hsl(161, 100%, 55%);
+  }
+  
+  .location {
+    padding: 5px 150px;
+    color: hsl(128, 91%, 89%);
+  }
+  
+  #loc {
+    font-size: 10px;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  .contactm {
+    color: hsl(128, 91%, 89%);
+    letter-spacing: 0px;
+    padding: 0px 10px;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  i {
+    color: hsl(128, 91%, 89%);
+  }
+  
+  me {
+    text-align: center;
+  }
+  
+  .fa {
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .fa:hover {
+    color: hsl(128, 91%, 89%);
+    transform: scale(1.6);
+  }
+  
+  /*shadow - árnyék*/
+  
+  
+  .profile-card {
+    position: relative;
+    -webkit-box-shadow: 0 0 4px rgba(255,236,255, 1), 0 0 40px rgba(255,236,255, 1);
+    -moz-box-shadow: 0 0 4px rgba(255,236,255, 1), 0 0 40px rgba(255,236,255, 1) inset;
+    box-shadow: 0 0 40px white, 0 0 90px white;
+    bottom: 30px;
+  }
+  
+  /*
+  .profile-card {
+    box-shadow: 10px 10px 20px 2px green;
+    /* box-shadow: 10px 0px 10px 2px green;*/ 
+  }
+  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
